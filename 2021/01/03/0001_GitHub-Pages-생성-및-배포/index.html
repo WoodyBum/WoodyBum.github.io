@@ -24,9 +24,9 @@
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 <meta name="description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Pages 생성 및 배포">
-<meta property="og:url" content="http://example.com/0001_GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9.html">
+<meta property="og:url" content="http://example.com/2021/01/03/0001_GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/index.html">
 <meta property="og:site_name" content="엘비스의 기술블로그">
 <meta property="og:description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
 <meta property="og:locale" content="ko_KR">
@@ -47,7 +47,7 @@
 <meta name="twitter:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/01.png">
 
 
-<link rel="canonical" href="http://example.com/0001_GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9">
+<link rel="canonical" href="http://example.com/2021/01/03/0001_GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
 
 
 <script class="page-configurations">
@@ -55,12 +55,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'ko'
   };
 </script>
-<title>GitHub Pages 생성 및 배포 | 엘비스의 기술블로그
-</title>
+<title>GitHub Pages 생성 및 배포 | 엘비스의 기술블로그</title>
   
 
 
@@ -172,9 +171,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">포스트</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">태그</span>
       </div>
   </nav>
 </div>
@@ -201,26 +204,56 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="ko"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">GitHub Pages 생성 및 배포
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/03/0001_GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="엘비스">
+      <meta itemprop="description" content="Eclipse developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="엘비스의 기술블로그">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GitHub Pages 생성 및 배포
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+      
+
+      <time title="Post created: 2021-01-03 15:17:13 / Updated at: 17:40:53" itemprop="dateCreated datePublished" datetime="2021-01-03T15:17:13+09:00">2021-01-03</time>
+    </span>
+
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body">
-          <h1 id="GitHub-Pages-호스팅"><a href="#GitHub-Pages-호스팅" class="headerlink" title="GitHub Pages 호스팅"></a>GitHub Pages 호스팅</h1><p>Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다.</p>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="GitHub-Pages-호스팅"><a href="#GitHub-Pages-호스팅" class="headerlink" title="GitHub Pages 호스팅"></a>GitHub Pages 호스팅</h1><p>Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다.</p>
 <h2 id="GitHub-Pages-Repository-생성"><a href="#GitHub-Pages-Repository-생성" class="headerlink" title="GitHub Pages Repository 생성"></a>GitHub Pages Repository 생성</h2><p>먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 <strong>username.github.io</strong> 로 작성한다.</p>
 <p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/01.png" alt="Repository 생성"></p>
 <h2 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h2><p>Repository를 생성하였다면, 먼저 Hexo를 설치한다. 여기서는 ~/git/ 경로에 Blog라는 디렉토리를 생성하고, 아래 명령어를 통해 Hexo를 설치하였다.</p>
@@ -246,14 +279,35 @@
 <p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/08.png" alt="배포"></p>
 <h2 id="GitHub-Page-접속"><a href="#GitHub-Page-접속" class="headerlink" title="GitHub Page 접속"></a>GitHub Page 접속</h2><p>배포가 정상적으로 이루어진다면, 접속한다.<br><img src="/images/0001-GitHub-Pages-Create-And-Deploy/09.png" alt="GitHub Page 접속"></p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/GIT/" rel="tag"># GIT</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/01/03/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 
