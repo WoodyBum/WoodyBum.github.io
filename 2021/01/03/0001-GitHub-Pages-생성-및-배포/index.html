@@ -21,33 +21,33 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 <meta name="description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Pages 생성 및 배포">
-<meta property="og:url" content="http://example.com/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/index.html">
+<meta property="og:url" content="http://example.com/2021/01/03/0001-GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/index.html">
 <meta property="og:site_name" content="엘비스의 기술블로그">
 <meta property="og:description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/01.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/02.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/03.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/04.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/05.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/06.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/07.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/08.png">
-<meta property="og:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/09.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/01.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/02.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/03.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/04.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/05.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/06.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/07.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/08.png">
+<meta property="og:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/09.png">
 <meta property="article:published_time" content="2021-01-03T06:17:13.000Z">
-<meta property="article:modified_time" content="2021-01-03T08:27:27.708Z">
+<meta property="article:modified_time" content="2021-01-03T08:35:40.744Z">
 <meta property="article:author" content="엘비스">
 <meta property="article:tag" content="GIT">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/GitHub-Pages-Create-And-Deploy/01.png">
+<meta name="twitter:image" content="http://example.com/images/0001-GitHub-Pages-Create-And-Deploy/01.png">
 
 
-<link rel="canonical" href="http://example.com/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
+<link rel="canonical" href="http://example.com/2021/01/03/0001-GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
 
 
 <script class="page-configurations">
@@ -171,7 +171,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">포스트</span>
         </a>
       </div>
@@ -215,7 +215,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/03/0001-GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -240,7 +240,7 @@
       <span class="post-meta-item-text">작성일</span>
       
 
-      <time title="Post created: 2021-01-03 15:17:13 / Updated at: 17:27:27" itemprop="dateCreated datePublished" datetime="2021-01-03T15:17:13+09:00">2021-01-03</time>
+      <time title="Post created: 2021-01-03 15:17:13 / Updated at: 17:35:40" itemprop="dateCreated datePublished" datetime="2021-01-03T15:17:13+09:00">2021-01-03</time>
     </span>
 
   
@@ -255,29 +255,29 @@
     <div class="post-body" itemprop="articleBody">
         <h1 id="GitHub-Pages-호스팅"><a href="#GitHub-Pages-호스팅" class="headerlink" title="GitHub Pages 호스팅"></a>GitHub Pages 호스팅</h1><p>Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다.</p>
 <h2 id="GitHub-Pages-Repository-생성"><a href="#GitHub-Pages-Repository-생성" class="headerlink" title="GitHub Pages Repository 생성"></a>GitHub Pages Repository 생성</h2><p>먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 <strong>username.github.io</strong> 로 작성한다.</p>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/01.png" alt="Repository 생성"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/01.png" alt="Repository 생성"></p>
 <h2 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h2><p>Repository를 생성하였다면, 먼저 Hexo를 설치한다. 여기서는 ~/git/ 경로에 Blog라는 디렉토리를 생성하고, 아래 명령어를 통해 Hexo를 설치하였다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/02.png" alt="Hexo 설치"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/02.png" alt="Hexo 설치"></p>
 <h2 id="Hexo-초기화"><a href="#Hexo-초기화" class="headerlink" title="Hexo 초기화"></a>Hexo 초기화</h2><p>~/git/Blog/ 경로에 포스팅 할 게시물을 관리한 디렉토리를 하나 더 만든다. 여기서는 GitHub Pages와 같은 이름으로 작성하였다.<br>디렉토리를 생성하였다면, 다음의 명령어를 이용하여 Hexo를 초기화 한다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [디렉토리 명]</span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/03.png" alt="Hexo 초기화"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/03.png" alt="Hexo 초기화"></p>
 <h2 id="로컬-서버-실행"><a href="#로컬-서버-실행" class="headerlink" title="로컬 서버 실행"></a>로컬 서버 실행</h2><p>앞에서 초기화 한 디렉토리로 들어간 후, 아래 명령어를 이용하여 로컬에서 서버를 띄운다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/04.png" alt="로컬 서버 실행"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/04.png" alt="로컬 서버 실행"></p>
 <h2 id="로컬-서버-접속"><a href="#로컬-서버-접속" class="headerlink" title="로컬 서버 접속"></a>로컬 서버 접속</h2><p>브라우저에서 <strong>localhost:4000</strong>로 접속하면 Hexo테마가 적용된 정적 페이지가 로드 된 것을 알 수 있다.</p>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/05.png" alt="로컬 서버 접속"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/05.png" alt="로컬 서버 접속"></p>
 <h2 id="Deploy-설정"><a href="#Deploy-설정" class="headerlink" title="Deploy 설정"></a>Deploy 설정</h2><p>로컬에서 Hexo 테마가 정상적으로 로드되는 것을 확인하였으므로, 현재 까지의 정보를 앞에서 만든 레파지토리에 반영할것이다.<br>~/git/Blog/[디렉토리명]/_config.yml 파일을 열어서, deploy 항목에 아래와 같이 입력한다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: GitHub Page Repository 주소 <span class="comment"># 맨 뒤 .git은 제거한다.</span></span><br><span class="line">    branch: master <span class="comment"># 브런치를 별도로 관리할 경우 해당 브런치 명을 작성한다.</span></span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/06.png" alt="Deploy 설정"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/06.png" alt="Deploy 설정"></p>
 <h2 id="배포-플러그인-설치"><a href="#배포-플러그인-설치" class="headerlink" title="배포 플러그인 설치"></a>배포 플러그인 설치</h2><p>Hexo에서 GitHub로 배포할 플러그인을 설치한다. 아래 명령어를 이용한다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/07.png" alt="배포 플러그인 설치"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/07.png" alt="배포 플러그인 설치"></p>
 <p>위 경고는 highlight.js가 node 9 이상 버전에서는 Deprecated되어 나타나는 문제이다. 딱히 상관없으므로 우선 무시한다.</p>
 <h2 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h2><p>배포 플러그인까지 설치를 완료하였다면, 이제 배포한다. 아래 명령어를 이용한다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p><img src="/images/GitHub-Pages-Create-And-Deploy/08.png" alt="배포"></p>
-<h2 id="GitHub-Page-접속"><a href="#GitHub-Page-접속" class="headerlink" title="GitHub Page 접속"></a>GitHub Page 접속</h2><p>배포가 정상적으로 이루어진다면, 접속한다.<br><img src="/images/GitHub-Pages-Create-And-Deploy/09.png" alt="GitHub Page 접속"></p>
+<p><img src="/images/0001-GitHub-Pages-Create-And-Deploy/08.png" alt="배포"></p>
+<h2 id="GitHub-Page-접속"><a href="#GitHub-Page-접속" class="headerlink" title="GitHub Page 접속"></a>GitHub Page 접속</h2><p>배포가 정상적으로 이루어진다면, 접속한다.<br><img src="/images/0001-GitHub-Pages-Create-And-Deploy/09.png" alt="GitHub Page 접속"></p>
 
     </div>
 
@@ -299,6 +299,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/01/03/02-Hexo-%E1%84%85%E1%85%A6%E1%84%91%E1%85%A1%E1%84%8C%E1%85%B5%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5-%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5/" rel="next" title="Hexo 레파지토리 관리">
+                  Hexo 레파지토리 관리 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -347,7 +350,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">엘비스</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
     </div>
