@@ -23,30 +23,43 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Eclipse developer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="엘비스의 기술블로그">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub Pages 생성 및 배포">
+<meta property="og:url" content="http://example.com/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/index.html">
 <meta property="og:site_name" content="엘비스의 기술블로그">
-<meta property="og:description" content="Eclipse developer">
+<meta property="og:description" content="GitHub Pages 호스팅Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다. GitHub Pages Repository 생성먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 username.github.io 로 작성한다.  Hexo 설치Reposi">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/01.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/02.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/03.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/04.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/05.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/06.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/07.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/08.png">
+<meta property="og:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/09.png">
+<meta property="article:published_time" content="2021-01-03T06:17:13.000Z">
+<meta property="article:modified_time" content="2021-01-03T08:04:24.460Z">
 <meta property="article:author" content="엘비스">
+<meta property="article:tag" content="GIT">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/01.png">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'ko'
   };
 </script>
-<title>엘비스의 기술블로그</title>
+<title>GitHub Pages 생성 및 배포 | 엘비스의 기술블로그</title>
   
 
 
@@ -132,7 +145,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           목차
@@ -145,6 +158,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub-Pages-%ED%98%B8%EC%8A%A4%ED%8C%85"><span class="nav-number">1.</span> <span class="nav-text">GitHub Pages 호스팅</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages-Repository-%EC%83%9D%EC%84%B1"><span class="nav-number">1.1.</span> <span class="nav-text">GitHub Pages Repository 생성</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%EC%84%A4%EC%B9%98"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo 설치</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%EC%B4%88%EA%B8%B0%ED%99%94"><span class="nav-number">1.3.</span> <span class="nav-text">Hexo 초기화</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%A1%9C%EC%BB%AC-%EC%84%9C%EB%B2%84-%EC%8B%A4%ED%96%89"><span class="nav-number">1.4.</span> <span class="nav-text">로컬 서버 실행</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%A1%9C%EC%BB%AC-%EC%84%9C%EB%B2%84-%EC%A0%91%EC%86%8D"><span class="nav-number">1.5.</span> <span class="nav-text">로컬 서버 접속</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deploy-%EC%84%A4%EC%A0%95"><span class="nav-number">1.6.</span> <span class="nav-text">Deploy 설정</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%B0%B0%ED%8F%AC-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98"><span class="nav-number">1.7.</span> <span class="nav-text">배포 플러그인 설치</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%B0%B0%ED%8F%AC"><span class="nav-number">1.8.</span> <span class="nav-text">배포</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Page-%EC%A0%91%EC%86%8D"><span class="nav-number">1.9.</span> <span class="nav-text">GitHub Page 접속</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -190,9 +204,10 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
@@ -212,9 +227,9 @@
       <meta itemprop="name" content="엘비스의 기술블로그">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/03/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/" class="post-title-link" itemprop="url">GitHub Pages 생성 및 배포</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          GitHub Pages 생성 및 배포
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -238,7 +253,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="GitHub-Pages-호스팅"><a href="#GitHub-Pages-호스팅" class="headerlink" title="GitHub Pages 호스팅"></a>GitHub Pages 호스팅</h1><p>Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다.</p>
+        <h1 id="GitHub-Pages-호스팅"><a href="#GitHub-Pages-호스팅" class="headerlink" title="GitHub Pages 호스팅"></a>GitHub Pages 호스팅</h1><p>Hexo 테마 기반의 GitHub Pages를 구축한다. Node는 설치되어 있다는 가정하에 진행한다.</p>
 <h2 id="GitHub-Pages-Repository-생성"><a href="#GitHub-Pages-Repository-생성" class="headerlink" title="GitHub Pages Repository 생성"></a>GitHub Pages Repository 생성</h2><p>먼저, GitHub Pages를 구성하기 위한 Repository를 생성한다. Repository 주소는 <strong>username.github.io</strong> 로 작성한다.</p>
 <p><img src="/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/01.png" alt="Repository 생성"></p>
 <h2 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h2><p>Repository를 생성하였다면, 먼저 Hexo를 설치한다. 여기서는 ~/git/ 경로에 Blog라는 디렉토리를 생성하고, 아래 명령어를 통해 Hexo를 설치하였다.</p>
@@ -264,7 +279,6 @@
 <p><img src="/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/08.png" alt="배포"></p>
 <h2 id="GitHub-Page-접속"><a href="#GitHub-Page-접속" class="headerlink" title="GitHub Page 접속"></a>GitHub Page 접속</h2><p>배포가 정상적으로 이루어진다면, 접속한다.<br><img src="/images/GitHub-Pages-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9/09.png" alt="GitHub Page 접속"></p>
 
-      
     </div>
 
     
@@ -272,83 +286,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/GIT/" rel="tag"># GIT</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/01/03/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/03/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="엘비스">
-      <meta itemprop="description" content="Eclipse developer">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="엘비스의 기술블로그">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/03/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">작성일</span>
-
-      <time title="Post created: 2021-01-03 13:45:39" itemprop="dateCreated datePublished" datetime="2021-01-03T13:45:39+09:00">2021-01-03</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
